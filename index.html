@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>UFC2</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      padding-top: 70px;
+    }
+
+    .navbar-default {
+      height: 65px;
+    }
+
+    .navbar-default .navbar-brand {
+      padding-top: 0;
+      padding-bottom: 0;
+      line-height: 65px;
+      font-size: 18pt;
+    }
+
+    .navbar-nav>li>a {
+      padding-top: 0;
+      padding-bottom: 0;
+      line-height: 65px;
+      font-size: 16pt;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="index.html" class="navbar-brand">UFC2 Study</a>
+      </div>
+      <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav ">
+          <li><a href="#about">About</a></li>
+          <li><a href="#download">Downloads</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="page-header">
+          <h2 id="about">About this Study</h2>
+          <p style="font-size: 16px">
+            This project studies how today's cloud storage services (CSSes) support collaborative file editing. As a tradeoff for transparency and user-friendliness, they do not ask users to use version control systems; instead, they implement their own heuristics for dealing with conflicts, which however often lead to unexpected and undesired experiences. With measurement study and reverse engineering, we unravel a number of their design and implementation issues as the root causes of undesired experiences.
+            <br><br>
+            Driven by the findings, we propose to reconsider the collaboration support of CSSes from a novel perspective of <i>operations</i> without using any locks. To enable this idea, we design intelligent approaches to the inference and transformation of users' editing operations, as well as optimizations to the maintenance of a file's historic versions. We develop an open-source system, UFC2 (User-Friendly Collaborative Cloud), to embody our design, which can avoid most (98%) conflicts with little (2%) time overhead.
+          </p>
+          <br>
+          <h2 id="download">Code and Raw Data Download</h2>
+          <!--<p style="font-size: 16px">
+            Our paper has been conditionally accepted for
+            <a href="https://www.sigmobile.org/mobisys/2019/">MobiSys 2019</a>.<br>
+          </p>-->
+          <h4>Code</h4>
+          <p style="font-size: 16px">
+            We provide the customization code of UFC2 <a
+              href="https://github.com/ufc2project/UFC2">on GitHub</a>.<br>
+          </p>
+          <h4>Raw Data</h4>
+          <p style="font-size: 16px">
+            Our collected real-world collaboration traces are hosted in <a href="https://drive.google.com/file/d/1nz1ah59aTkI7WJR5kwCdmaP4mN88Pcrg/view?usp=sharing">Google Drive</a> (13 GB in archive).
+          </p>
+          <p style="font-size: 16px">
+            Please cite this study when using the data.
+          </p>
+          <br>
+          <h2 id="contact">Contact</h2>
+          <p>
+            <b>chenjian1995.thu</b> [AT] <b>gmail.com</b>
+          </p>
+          <p>
+            <b>lizhenhua1983</b> [AT] <b>tsinghua.edu.cn</b>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
